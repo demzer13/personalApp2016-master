@@ -1,0 +1,29 @@
+<template name="home">
+  <h1>Brandeis Meal Buddies</h1>
+  Welcome to my Personal App! <br>
+  {{#if currentUser}}
+     You have successfully logged in.
+  {{else}}
+     Please log into your account to continue.
+  {{/if}}
+  <br><br><br><br>
+  <h2>Places to dine on campus:</h2>
+  <br>
+  <h3>Click the link of a dining place for more information about it:</h3>
+  <br><br><br>
+  <a href="https://brandeis.sodexomyway.com/dining-choices/usdan/lower-usdan.html">Usdan Dining Hall</a>
+  <br><hr>
+  <img class="img-circle" src="https://s3.amazonaws.com/media.jst/4873_usdan_construction_082314_mb_0027f.JPG" width="400">
+  <br><br><br>
+  <a href="https://brandeis.sodexomyway.com/dining-choices/usdan/index.html">Upper Usdan</a>
+  <br><hr>
+  <img class="img-rounded" src="http://boston.forward.com/image/2/630/0/5//assets/images/articles/NY-Deli-at-Brandeis.jpg" width="400">
+  <br><br><br>
+  <a href="https://brandeis.sodexomyway.com/dining-choices/index.html">Sherman</a>
+  <br><hr>
+  <img class="img-thumbnail" src="http://brandeishoot.com/wp-content/uploads/2015/09/IMG_7145.jpg" width="400">
+  <br><br><br>
+  <a href="https://brandeis.sodexomyway.com/dining-choices/faculty-club.html">Faculty Club</a>
+  <br><hr>
+  <img class="img-circle" src="https://www.brandeis.edu/ces/externalevents/images/resize%20FC%20Lounge.JPG" width="400">
+</template>

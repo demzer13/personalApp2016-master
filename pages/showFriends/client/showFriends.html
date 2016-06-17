@@ -1,0 +1,22 @@
+<template name="showFriends">
+  <h1>Find a meal buddy!</h1>
+  <!--Desired place to eat: <input type="text" class="js-plac">-->
+  <hr>
+  <h2>Request a Meal Buddy:</h2>
+  Your Name: <input type="text" class="js-name"><br>
+  Preferred Dining Time: <input type="text" class="js-time"><br>
+  Preferred Dining Place:<br>
+  <input type="checkbox" class="js-usdan">Usdan<br>
+  <input type="checkbox" class="js-upper">Upper Usdan<br>
+  <input type="checkbox" class="js-sherman">Sherman<br>
+  <input type="checkbox" class="js-faculty">Faculty Club<br>
+  <br>
+  <button class="js-addFriend">Request a Meal Buddy</button>
+  <br>
+  <h3>Friends Requesting Meal Buddies:</h3>
+  <ul>
+    {{#each f in friends}}
+      <li>{{f.name}} is requesting a meal buddy at {{f.time}} in {{f.place}}</li>
+    {{/each}}
+  </ul>
+</template>
