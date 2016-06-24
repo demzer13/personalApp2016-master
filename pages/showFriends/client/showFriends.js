@@ -3,9 +3,6 @@ Template.showFriends.helpers({
     //const diningPlace = $(".js-place").val();
     return Friends.find();
   },
-  specifiedFriends:function(){
-    return Friends.find({time: "11:00 A.M.", place: "Usdan"});
-  },
 })
 
 Template.showFriends.events({
@@ -21,6 +18,18 @@ Template.showFriends.events({
     //const faculty = $(".js-faculty").val();
     const friend = {name:name, time:time, place:place};
     console.dir(friend);
-    Friends.insert(friend);
+    //Friends.insert(friend);
+    //Times.insert(time);//new
+    //Places.insert(place);//new
+    Meteor.call("insertFriend",friend);
+    Meteor.call("insertTime",time);
+    Meteor.call("insertPlace",place);
+  },
+
+  "click .js-removeall":function(event){
+    console.log("removed all");
+    const password= $(".js-password").val();
+    Meteor.call("removeAll",password);
   }
+
 })

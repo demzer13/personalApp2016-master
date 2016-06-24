@@ -1,39 +1,8 @@
-<template name="table">
-  <h1>View who is planning to dine where and at what time:</h1>
-  <!--Buddies wishing to dine at Usdan:
+<template name="tableoriginal">
+  <h1>View who is planning to dine where and at what time</h1>
+  Buddies wishing to dine at Usdan:
   <br>
-  <hr>-->
-<!--new  -->
-
-  {{#each p in places}}
-    Buddies wishing to dine at {{p}}:
-    <br>
-    <hr>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>11:00 A.M.</th><th>11:30 A.M.</th><th>12:00 P.M</th><th>12:30 P.M.</th><th>1:00 P.M.</th><th>1:30 P.M.</th>
-          <th>5:00 P.M.</th><th>5:30 P.M.</th><th>5:30 P.M.</th><th>5:30 P.M.</th><th>6:00 P.M.</th><th>6:30 P.M.</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          {{#each t in times}}
-            <td>
-              <ul>
-                {{#each (people t p)}}
-                  <li> {{f.name}} </li>
-                {{/each}}
-              </ul>
-            </td>
-          {{/each}}
-        </tr>
-      </tbody>
-    </table>
-  {{/each}}
-<!--new -->
-
-<!--ORIGINAL
+  <hr>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -94,5 +63,5 @@
     </tbody>
   </table>
   <br><br><br>
--->
+
 </template>

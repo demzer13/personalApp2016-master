@@ -4,7 +4,7 @@
   <hr>
   <div class="bg-warning">
   <h2>Request a Meal Buddy:</h2>
-  Your Name: <input type="text" class="js-name"><br>
+  Your Name: <input type="text" class="js-name" placeholder="Name"><br>
   Preferred Dining Time:
   <select class="js-time">
     <option>Please select a time</option>
@@ -47,6 +47,11 @@
     {{/each}}
   </ul>
 </div>
+<br><br>
+<input type="password" class="js-password" placeholder="Enter Password">
+<button class="js-removeall">Remove all Meal Buddies</button>
+
+
 </template>
 
 <template name="showFriend">
