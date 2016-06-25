@@ -1,12 +1,14 @@
 Template.table.helpers({
 	places:function(){
-		return Places.find();
+		return ["Usdan", "Upper Usdan", "Sherman", "Faculty Club"];
 	},
 	times:function(){
-		return Times.find();
+		return ["11:00 A.M.", "11:30 A.M.", "12:00 P.M.", "12:30 P.M.", "1:00 P.M.", "1:30 P.M.",
+		"5:00 P.M.", "5:30 P.M.","6:00 P.M", "6:30 P.M."];
 	},
-	people(t,p){
-		return Friends.find({time:t},{place:p});
+	people:function(t,p){
+		console.dir([t,p]);
+		return Friends.find({time:t,place:p});
 	},
 })
 
