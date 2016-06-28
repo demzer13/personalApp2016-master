@@ -1,5 +1,6 @@
 <template name="comments">
-  <h1>Write a comment/review on our web app!</h1>
+  <center>
+  <h1 style="font-family:‘Arial Black’, Gadget, sans-serif; color:#002966; font-size: 50px;">Write a comment/review on our web app!</h1>
   {{#if currentUser}}
   Please give us feedback on our web app and ways we can improve it!
 	<input type="text" class="js-user-comment" placeholder="Please enter a comment">
@@ -19,9 +20,9 @@
   {{else}}
 	<h3>You must log in to make comments!</h3>
   {{/if}}
-
+  </center>
 	<hr>
-  <h4>Recent Reviews of this App:</h4>
+  <h4 style="font-family:‘Arial Black’, Gadget, sans-serif; color:#002966; font-size: 20px;">Recent Reviews of this App:</h4>
 	<ul>
 	{{#each c in commentsdata}}
 	   {{> commentRow  comment=c}}

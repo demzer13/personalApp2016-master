@@ -12,10 +12,6 @@ Template.showFriends.events({
     const name = $(".js-name").val();
     const time = $(".js-time").val();
     const place = $(".js-place").val();
-    //const usdan = $(".js-usdan").val();
-    //const upper = $(".js-upper").val();
-    //const sherman = $(".js-sherman").val();
-    //const faculty = $(".js-faculty").val();
     const friend = {name:name, time:time, place:place};
     console.dir(friend);
     //Friends.insert(friend);

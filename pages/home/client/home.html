@@ -1,12 +1,14 @@
 <template name="home">
-  <h1>Brandeis Meal Buddies</h1>
-  Welcome to my Personal App! <br>
+  <center>
+  <body style="background-color:#ffffb3">
+  <center style="font-family:Impact, Charcoal, sans-serif; color:#002966; font-size: 100px;">Brandeis Meal Buddies</center>
+  <center style="font-family:ITahoma, Geneva, sans-serif; color:#00b8e6; font-size: 35px;">Welcome to my Personal App! </center><br>
   {{#if currentUser}}
      You have successfully logged in.
   {{else}}
      Please log into your account to continue.
   {{/if}}
-  
+
   <div class="{{theColor}}">
   <select class="js-color">
     <option>bg-info</option>
@@ -14,14 +16,14 @@
   </select>
   <br>
   Color: {{theColor}}<br>
-  Counter: {{theCounter}}<br>
-  <button class="js-pusher">Push me</button>
+  Number of times you have disobeyed the rules: {{theCounter}}<br>
+  <button class="js-pusher">Do not press this button</button>
   </div>
 
   <br><br><br><br>
-  <h2>Places to dine on campus:</h2>
+  <center style="font-family:‘Arial Black’, Gadget, sans-serif; color:#002966; font-size: 50px;">Places to dine on campus:</center>
   <br>
-  <h3>Click the link of a dining place for more information about it:</h3>
+  <center style="font-family:‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif; color:#002966; font-size: 20px;">Click the link of a dining place for more information about it:</center>
   <br><br><br>
   <a href="https://brandeis.sodexomyway.com/dining-choices/usdan/lower-usdan.html">Usdan Dining Hall</a>
   <br><hr>
@@ -38,4 +40,6 @@
   <a href="https://brandeis.sodexomyway.com/dining-choices/faculty-club.html">Faculty Club</a>
   <br><hr>
   <img class="img-circle" src="https://www.brandeis.edu/ces/externalevents/images/resize%20FC%20Lounge.JPG" width="400">
+</body>
+</center>
 </template>
