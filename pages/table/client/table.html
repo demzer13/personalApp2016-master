@@ -1,12 +1,8 @@
 <template name="table">
-  <h1>View who is planning to dine where and at what time:</h1>
-  <!--Buddies wishing to dine at Usdan:
-  <br>
-  <hr>-->
-<!--new  -->
-
+  <center style="font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif; color:#00b8e6; font-size: 45px;">View who is planning to dine where and at what time:</center>
 <br>
 <hr>
+<div class="bg-info">
 <table class="table table-striped table-bordered">
   <thead>
     <tr>
@@ -19,7 +15,7 @@
   <tbody>
     {{#each p in places}}
       <tr>
-      <td>{{p}}</td>
+      <td><b>{{p}}</b></td>
         {{#each t in times}}
         <td>
           <ul>
@@ -33,4 +29,5 @@
 {{/each}}
   </tbody>
 </table>
+</div>
 </template>

@@ -28,7 +28,6 @@ Template.showFriends.events({
     Meteor.call("removeAll",password);
   },
   "click .js-desired": function(event){
-
     Meteor.subscribe("theFriendsAt",$(".js-desired").val());
   }
 

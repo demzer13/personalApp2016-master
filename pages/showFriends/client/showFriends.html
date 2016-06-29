@@ -1,10 +1,9 @@
 <template name="showFriends">
-  <h1>Find a meal buddy!</h1>
-  <!--Desired place to eat: <input type="text" class="js-plac">-->
+  <center style="font-family: Verdana, Geneva, sans-serif; color:#002966; font-size: 100px;">Find a Meal Buddy!</center>
   <hr>
-  Desired Place to Eat at: <input type="text" class="js-desired" placeholder="Place"><br>
+  <!--<input type="text" class="js-desired" placeholder="Place"><br>-->
   <div class="bg-warning">
-  <h2>Request a Meal Buddy:</h2>
+  <h1 style="font-family: Gill Sans / Gill Sans MT, sans-serif; color:#002966; font-size: 30px;">Request a Meal Buddy:</h1>
   Your Name: <input type="text" class="js-name" placeholder="Name"><br>
   Preferred Dining Time:
   <select class="js-time">
@@ -36,7 +35,15 @@
 </div>
   <br><br><br>
   <div class="bg-info">
-  <h3>Friends Requesting Meal Buddies:</h3>
+  <h3 style="font-family: Gill Sans / Gill Sans MT, sans-serif; color:#002966; font-size: 30px;">Show Current Meal Buddy Requests At:</h3>
+    Show friends requesting meal buddies at this dining place:
+    <select class="js-desired">
+      <option>Place</option>
+      <option>Usdan</option>
+      <option>Upper Usdan</option>
+      <option>Sherman</option>
+      <option>Faculty Club</option>
+    </select>
   <ul>
     {{#each f in friends}}
       <li>{{f.name}} is requesting
@@ -48,7 +55,7 @@
 <br><br>
 
 <div class= "bg-danger">
-  Type in the password to remove all current meal buddies.
+  Type in the secret password to remove all current meal buddies.
   <input type="password" class="js-password" placeholder="Enter Password">
   <button class="js-removeall">Remove all Meal Buddies</button>
 </div>
