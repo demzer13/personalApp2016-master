@@ -23,7 +23,7 @@ Template.home.helpers({
 Template.home.events({
   "change .js-color": function(event,instance){
     const c = instance.$(".js-color").val();
-    //change the color ield of the state object
+    //change the color field of the state object
     instance.state.set("color",c);//changes instance, so Template helper
     //automatically called, initially called with default color value
   },
