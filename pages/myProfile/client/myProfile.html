@@ -1,0 +1,14 @@
+<template name="myProfile">
+  {{#if currentUser}}
+		     Congratulations you are logged in!<br>
+         Your First Name: <input type="text" class="js-first-name" placeholder="First Name"><br><br>
+         Your Last Name: <input type="text" class="js-last-name" placeholder="Last Name"><br><br>
+         Your Nickname: <input type="text" class="js-nickname" placeholder="Nickname"><br><br>
+         Your Email: <input type="text" class="js-email" placeholder="Email"><br><br>
+         Your Birth Year: <input type="text" class="js-birth-year" placeholder="Birth Year"><br><br>
+         <button class="js-submit-form">Submit</button><br>
+	{{else}}
+		     You need to log in to see your user profile.
+	{{/if}}
+
+</template>

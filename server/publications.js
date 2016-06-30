@@ -1,13 +1,9 @@
-Meteor.publish("theFriends",
-  function(){return Friends.find();})
 
-Meteor.publish("theFriendsAt",
-    function(loc){return Friends.find({place:loc});})
+Meteor.publish("theUserProfiles",
+  function(){return UserProfiles.find();
+})
 
-Meteor.publish("theComments",
-  function(){return Comments.find();})
-
-Meteor.publish("userData", function(){
+/*Meteor.publish("userData", function(){
   if(this.userId){//only if you log in can you see it
     return Meteor.users.find({_id: this.userId},
                             {fields: {profile:1,
@@ -17,4 +13,4 @@ Meteor.publish("userData", function(){
   }else{
     this.ready();
   }
-});
+});*/
