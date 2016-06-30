@@ -7,6 +7,14 @@ Meteor.publish("theFriendsAt",
 Meteor.publish("theComments",
   function(){return Comments.find();})
 
+Meteor.publish("theSettings", function(){
+    if(this.userId){
+      return Settings.find();
+    }else{
+      this.ready();
+    }
+})
+
 Meteor.publish("userData", function(){
   if(this.userId){//only if you log in can you see it
     return Meteor.users.find({_id: this.userId},
