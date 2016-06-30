@@ -1,0 +1,17 @@
+<template name="settings">
+  <center style="font-family: Century Gothic, sans-serif; color:#00b8e6; font-size: 100px;">
+    My Settings
+  </center>
+  <br><hr><br>
+  <center>Current Greeting Message on your Home Page:</center>
+  <br>
+  <center style="font-family:ITahoma, Geneva, sans-serif; color:#00b8e6; font-size: 35px;">{{usersettings.greeting}}</center>
+  <br><br>
+  <center>Customize the Greeting Message on your Home Page:</center>
+  <br>
+  <center>
+    <input type="text" class="js-greeting" placeholder="Enter preferred greeting"><br>
+    <button class="js-addGreeting">Submit</button><br>
+    <!--<button class="js-removeusers">Remove</button>-->
+  </center>
+</template>

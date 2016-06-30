@@ -18,6 +18,11 @@ Template.home.helpers({
     const instance = Template.instance();
     return instance.state.get("counter");
   },
+  usersetting:function(){
+    console.log(Settings.findOne({user:Meteor.userId()}));
+    return Settings.findOne({user:Meteor.userId()});
+  },
+
 });
 
 Template.home.events({
