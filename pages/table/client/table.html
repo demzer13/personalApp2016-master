@@ -1,7 +1,30 @@
 <template name="table">
-  <center style="font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif; color:#00b8e6; font-size: 45px;">View who is planning to dine where and at what time:</center>
+<center style="font-family:Impact, Charcoal, sans-serif; color:#002966; font-size: 100px;">Brandeis Meal Buddies</center>
+<center style="font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif; color:#00b8e6; font-size: 45px;">View who is planning to dine where and at what time:</center>
 <br>
 <hr>
+<div class="bg-info">
+<h3 style="font-family: Gill Sans / Gill Sans MT, sans-serif; color:#002966; font-size: 30px;">Show Current Meal Buddy Requests At:</h3>
+  Show friends requesting meal buddies at this dining place:
+  <select class="js-desired">
+    <option>Place</option>
+    <option>Usdan</option>
+    <option>Upper Usdan</option>
+    <option>Sherman</option>
+    <option>Faculty Club</option>
+  </select>
+<ul>
+  {{#each f in friends}}
+    <li>{{f.name}} is requesting
+      <a href="/showfriend/{{f._id}}">a meal buddy</a>
+       at {{f.time}} in {{f.place}}</li>
+  {{/each}}
+</ul>
+</div>
+<br><br>
+<hr>
+<center style="font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif; color:#002966; font-size: 45px;">Table
+</center>
 <div class="bg-info">
 <table class="table table-striped table-bordered">
   <thead>

@@ -1,5 +1,7 @@
 <template name="showFriends">
-  <center style="font-family: Verdana, Geneva, sans-serif; color:#002966; font-size: 100px;">Find a Meal Buddy!</center>
+  <div class="bg-info">
+  <center style="font-family:Impact, Charcoal, sans-serif; color:#002966; font-size: 100px;">Brandeis Meal Buddies</center>
+  <center style="font-family: Verdana, Geneva, sans-serif; color:#002966; font-size: 50px;">Find a Meal Buddy!</center>
   <hr>
   <!--<input type="text" class="js-desired" placeholder="Place"><br>-->
   <div class="bg-warning">
@@ -34,24 +36,6 @@
   <button class="js-addFriend">Request a Meal Buddy</button>
 </div>
   <br><br><br>
-  <div class="bg-info">
-  <h3 style="font-family: Gill Sans / Gill Sans MT, sans-serif; color:#002966; font-size: 30px;">Show Current Meal Buddy Requests At:</h3>
-    Show friends requesting meal buddies at this dining place:
-    <select class="js-desired">
-      <option>Place</option>
-      <option>Usdan</option>
-      <option>Upper Usdan</option>
-      <option>Sherman</option>
-      <option>Faculty Club</option>
-    </select>
-  <ul>
-    {{#each f in friends}}
-      <li>{{f.name}} is requesting
-        <a href="/showfriend/{{f._id}}">a meal buddy</a>
-         at {{f.time}} in {{f.place}}</li>
-    {{/each}}
-  </ul>
-</div>
 <br><br>
 
 <div class= "bg-danger">
@@ -59,8 +43,12 @@
   <input type="password" class="js-password" placeholder="Enter Password">
   <button class="js-removeall">Remove all Meal Buddies</button>
 </div>
+<br><br><br><br>
+</div>
 </template>
 
 <template name="showFriend">
+  <body style="background-color:#7FB3D5">
   Be the nice friend that can accompany {{name}} at {{time}} in {{place}}!
+ </body>
 </template>

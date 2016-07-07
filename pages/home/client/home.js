@@ -1,4 +1,4 @@
-Template.home.onCreated(function(){
+/*Template.home.onCreated(function(){
   this.state = new ReactiveDict();
   this.state.setDefault({
     color: "big-info",
@@ -7,9 +7,9 @@ Template.home.onCreated(function(){
   console.log("creating the template");
   console.dir(this.state);
 });
-
+*/
 Template.home.helpers({
-  theColor: function(){
+/*  theColor: function(){
     const instance = Template.instance();
     return instance.state.get("color");
   },
@@ -18,6 +18,7 @@ Template.home.helpers({
     const instance = Template.instance();
     return instance.state.get("counter");
   },
+*/
   usersetting:function(){
     console.log(Settings.findOne({user:Meteor.userId()}));
     return Settings.findOne({user:Meteor.userId()});
@@ -25,10 +26,10 @@ Template.home.helpers({
 
 });
 
-Template.home.events({
+/*Template.home.events({
   "change .js-color": function(event,instance){
     const c = instance.$(".js-color").val();
-    //change the color ield of the state object
+    //change the color field of the state object
     instance.state.set("color",c);//changes instance, so Template helper
     //automatically called, initially called with default color value
   },
@@ -38,3 +39,4 @@ Template.home.events({
     instance.state.set("counter",c+1);
   }
 })
+*/

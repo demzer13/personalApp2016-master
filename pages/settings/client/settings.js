@@ -1,7 +1,20 @@
+Template.settings.onCreated(function(){
+  this.state = new ReactiveDict();
+  this.state.setDefault({
+    meals: 0,
+  });
+  //console.log("creating the template");
+  //console.dir(this.state);
+});
+
 Template.settings.helpers({
   usersettings:function(){
     console.log(Settings.findOne({user:Meteor.userId()}));
     return Settings.findOne({user:Meteor.userId()});
+  },
+  theMeals: function(){
+    const instance = Template.instance();
+    return instance.state.get("meals");
   },
 })
 
@@ -16,7 +29,10 @@ Template.settings.events({
       Meteor.call("updateSetting",setting);
     }
   },
-  //"click .js-removeusers":function(event){
-    //Meteor.call("removeSettings");
-//  },
+  "click .js-submitnum": function(event,instance){
+    const c = instance.$(".js-numbermeals").val();
+    //change the meals field of the state object
+    instance.state.set("meals",c);//changes instance, so Template helper
+    //automatically called, initially called with default number value
+  },
 })

@@ -1,17 +1,28 @@
 <template name="settings">
-  <center style="font-family: Century Gothic, sans-serif; color:#00b8e6; font-size: 100px;">
+  <center style="font-family:Impact, Charcoal, sans-serif; color:#002966; font-size: 100px;">Brandeis Meal Buddies</center>
+  <center style="font-family: Century Gothic, sans-serif; color:#00b8e6; font-size: 65px;">
     My Settings
   </center>
   <br><hr><br>
-  <center>Current Greeting Message on your Home Page:</center>
+  <center style="font-family: Century Gothic, sans-serif; color:#1A5276; font-size: 25px;">Current Greeting Message on your Home Page:</center>
   <br>
-  <center style="font-family:ITahoma, Geneva, sans-serif; color:#00b8e6; font-size: 35px;">{{usersettings.greeting}}</center>
+  <center style="font-family:ITahoma, Geneva, sans-serif; color:#00b8e6; font-size: 45px;">{{usersettings.greeting}}</center>
   <br><br>
-  <center>Customize the Greeting Message on your Home Page Here:</center>
+  <center style="font-family: Century Gothic, sans-serif; color:#00b8e6; font-size: 25px;">Customize the Greeting Message on your Home Page Here:</center>
   <br>
   <center>
     <input type="text" class="js-greeting" placeholder="Enter preferred greeting"><br>
     <button class="js-addGreeting">Submit</button><br>
     <!--<button class="js-removeusers">Remove</button>-->
+  </center>
+  <br><br>
+  <center style="font-family: Century Gothic, sans-serif; color:#1A5276; font-size: 25px;">
+    Number of Meals you currently have remaining for the week: {{theMeals}}
+  </center>
+  <br><br>
+  <center style="font-family: Century Gothic, sans-serif; color:#00b8e6; font-size: 25px;">Update the number of meals you have remaining for the week:</center>
+  <center>
+    <input type="text" class="js-numbermeals" placeholder="Enter remaining number of meals"><br>
+    <button class="js-submitnum">Submit</button><br>
   </center>
 </template>

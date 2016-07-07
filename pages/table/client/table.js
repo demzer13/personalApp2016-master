@@ -10,6 +10,16 @@ Template.table.helpers({
 		console.dir([t,p]);
 		return Friends.find({time:t,place:p});
 	},
+	friends:function(){
+    //const diningPlace = $(".js-place").val();
+    return Friends.find();
+  },
+})
+
+Template.table.events({
+	"click .js-desired": function(event){
+    Meteor.subscribe("theFriendsAt",$(".js-desired").val());
+  }
 })
 
 ///Handlebars.registerHelper('people', function(t, p){

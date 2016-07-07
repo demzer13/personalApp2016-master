@@ -1,10 +1,3 @@
-Template.showFriends.helpers({
-  friends:function(){
-    //const diningPlace = $(".js-place").val();
-    return Friends.find();
-  },
-})
-
 Template.showFriends.events({
   "click .js-addFriend": function(event){
     console.log("clicked button!");
@@ -27,8 +20,4 @@ Template.showFriends.events({
     const password= $(".js-password").val();
     Meteor.call("removeAll",password);
   },
-  "click .js-desired": function(event){
-    Meteor.subscribe("theFriendsAt",$(".js-desired").val());
-  }
-
 })
