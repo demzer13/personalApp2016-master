@@ -2,10 +2,14 @@ Meteor.publish("theFriends",
   function(){return Friends.find();})
 
 Meteor.publish("theFriendsAt",
-    function(loc){return Friends.find({place:loc});})
+    function(loc){
+      check(loc,String);
+      return Friends.find({place:loc});})
 
 Meteor.publish("theComments",
-  function(){return Comments.find();})
+  function(){return Comments.find(
+    );
+})
 
 Meteor.publish("theSettings", function(){
     if(this.userId){

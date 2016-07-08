@@ -4,6 +4,7 @@
   <center style="font-family: Verdana, Geneva, sans-serif; color:#002966; font-size: 50px;">Find a Meal Buddy!</center>
   <hr>
   <!--<input type="text" class="js-desired" placeholder="Place"><br>-->
+  <center>
   <div class="bg-warning">
   <h1 style="font-family: Gill Sans / Gill Sans MT, sans-serif; color:#002966; font-size: 30px;">Request a Meal Buddy:</h1>
   Your Name: <input type="text" class="js-name" placeholder="Name"><br>
@@ -32,17 +33,20 @@
     <option>Faculty Club</option>
   </select>
 
-  <br>
-  <button class="js-addFriend">Request a Meal Buddy</button>
+  <br><br><br>
+  <button class="js-addFriend btn btn-lg btn-info">Request a Meal Buddy</button>
+  <br><br><br>
+  <center style="font-family: Verdana, Geneva, sans-serif; color:#8E44AD  ; font-size: 30px;">Submission Status:  {{ifSubmitted}} </center>
 </div>
+</center>
   <br><br><br>
 <br><br>
-
+<!--
 <div class= "bg-danger">
   Type in the secret password to remove all current meal buddies.
   <input type="password" class="js-password" placeholder="Enter Password">
   <button class="js-removeall">Remove all Meal Buddies</button>
-</div>
+</div>-->
 <br><br><br><br>
 </div>
 </template>

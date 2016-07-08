@@ -7,6 +7,8 @@ Template.table.helpers({
 		"5:00 P.M.", "5:30 P.M.","6:00 P.M", "6:30 P.M."];
 	},
 	people:function(t,p){
+    check(t,String);
+    check(p,String);
 		console.dir([t,p]);
 		return Friends.find({time:t,place:p});
 	},
