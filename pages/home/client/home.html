@@ -9,26 +9,71 @@
      Please log into your account to continue.
   {{/if}}
 
-  <br><br><br><br>
+  <br><br>
+  <div class="bg-warning"><br>
+  <a href="{{pathFor route='showFriends'}}">REQUEST A MEAL BUDDY!</a><br>
+  </div>
   <center style="font-family:‘Arial Black’, Gadget, sans-serif; color:#002966; font-size: 50px;">Places to dine on campus:</center>
-  <br>
-  <center style="font-family:‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif; color:#002966; font-size: 40px;">Click the link of a dining place for more information about it:</center>
-  <br><br><br>
-  <a href="https://brandeis.sodexomyway.com/dining-choices/usdan/lower-usdan.html">Usdan Dining Hall</a>
-  <br><hr>
-  <img class="img-circle" src="https://s3.amazonaws.com/media.jst/4873_usdan_construction_082314_mb_0027f.JPG" width="400">
-  <br><br><br>
-  <a href="https://brandeis.sodexomyway.com/dining-choices/usdan/index.html">Upper Usdan</a>
-  <br><hr>
-  <img class="img-rounded" src="http://boston.forward.com/image/2/630/0/5//assets/images/articles/NY-Deli-at-Brandeis.jpg" width="400">
-  <br><br><br>
-  <a href="https://brandeis.sodexomyway.com/dining-choices/index.html">Sherman</a>
-  <br><hr>
-  <img class="img-thumbnail" src="http://brandeishoot.com/wp-content/uploads/2015/09/IMG_7145.jpg" width="400">
-  <br><br><br>
-  <a href="https://brandeis.sodexomyway.com/dining-choices/faculty-club.html">Faculty Club</a>
-  <br><hr>
-  <img class="img-circle" src="https://www.brandeis.edu/ces/externalevents/images/resize%20FC%20Lounge.JPG" width="400">
+  <br><br>
+
+  <center>
+  		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style = "width:800px; height: 400px">
+  		  <!-- Indicators -->
+  		  <ol class="carousel-indicators">
+  		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+  		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  		  </ol>
+
+  		  <!-- Wrapper for slides -->
+  		  <div class="carousel-inner" role="listbox">
+  		    <div class="item active">
+  		    	<center>
+  		      <img src="https://s3.amazonaws.com/media.jst/4873_usdan_construction_082314_mb_0027f.JPG" width = "800">
+  		      </center>
+  		      <div class="carousel-caption">
+  		        <a href="https://brandeis.sodexomyway.com/dining-choices/usdan/lower-usdan.html">Usdan Dining Hall</a>
+  		      </div>
+  		    </div>
+  			    <div class="item">
+  			    	<center>
+  			     	<img src="http://boston.forward.com/image/2/630/0/5//assets/images/articles/NY-Deli-at-Brandeis.jpg" width = "800" alt="...">
+  			     	</center>
+  			    	<div class="carousel-caption">
+  			        	<a href="https://brandeis.sodexomyway.com/dining-choices/usdan/index.html">Upper Usdan</a>
+  			    	</div>
+  		   		</div>
+            <div class="item">
+  			    	<center>
+  			     	<img src="http://brandeishoot.com/wp-content/uploads/2015/09/IMG_7145.jpg" width = "800" alt="...">
+  			     	</center>
+  			    	<div class="carousel-caption">
+  			        	<a href="https://brandeis.sodexomyway.com/dining-choices/index.html">Sherman Dining Hall</a>
+  			    	</div>
+  		   		</div>
+  		    <div class="item">
+  		    	<center>
+  		      <img src="https://www.brandeis.edu/ces/externalevents/images/resize%20FC%20Lounge.JPG" width = "800" alt="...">
+  		  		</center>
+  		      <div class="carousel-caption">
+  		        <a href="https://brandeis.sodexomyway.com/dining-choices/faculty-club.html">Faculty Club</a>
+  		      </div>
+  		    </div>
+  		    ...
+  		  </div>
+
+  		  <!-- Controls -->
+  		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+  		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  		    <span class="sr-only">Previous</span>
+  		  </a>
+  		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+  		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  		    <span class="sr-only">Next</span>
+  		  </a>
+  		</div>
+  		</center>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </center>
 </template>
