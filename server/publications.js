@@ -11,6 +11,13 @@ Meteor.publish("theComments",
     );
 })
 
+Meteor.publish("theBios",
+  function(){return Bios.find(
+    );
+})
+
+
+
 Meteor.publish("theSettings", function(){
     if(this.userId){
       return Settings.find();
