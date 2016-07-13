@@ -18,9 +18,10 @@ Template.showFriends.events({
     console.log("clicked button!");
     //read the input values stored in the input fields
     const name = $(".js-name").val();
+    const phone = $(".js-contact").val();
     const time = $(".js-time").val();
     const place = $(".js-place").val();
-    const friend = {name:name, time:time, place:place};
+    const friend = {name:name, phone:phone, time:time, place:place};
     console.dir(friend);
     //Friends.insert(friend);
     //Times.insert(time);//new

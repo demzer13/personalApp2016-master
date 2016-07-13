@@ -15,9 +15,9 @@
   </select>
 <ul>
   {{#each f in friends}}
-    <li>{{f.name}} is requesting
+    <li><b>{{f.name}}</b> is requesting
       <a href="/showfriend/{{f._id}}">a meal buddy</a>
-       at {{f.time}} in {{f.place}}</li>
+       at <b>{{f.time}}</b> in <b>{{f.place}}</b></li>
   {{/each}}
 </ul>
 </div>

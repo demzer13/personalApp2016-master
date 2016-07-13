@@ -2,19 +2,20 @@
   <center>
   <body style="background-color:#A9CCE3">
   <center style="font-family:Impact, Charcoal, sans-serif; color:#002966; font-size: 100px;">Brandeis Meal Buddies</center>
-  <center style="font-family:ITahoma, Geneva, sans-serif; color:#00b8e6; font-size: 35px;">{{usersetting.greeting}}</center><br>
+  <center style="font-family:ITahoma, Geneva, sans-serif; color:#00b8e6; font-size: 35px;">{{usersetting.greeting}}</center>
   {{#if currentUser}}
      You have successfully logged in.
+     <div class="bg-warning"><br>
+     <center style="font-family:ITahoma, Geneva, sans-serif; color:#00b8e6; font-size: 40px;">
+     <a href="{{pathFor route='showFriends'}}">Request a meal buddy!</a><br>
+     </center>
+     </div>
   {{else}}
-     Please log into your account to continue.
+     Please log into your account to continue and request a meal buddy.
   {{/if}}
 
-  <br><br>
-  <div class="bg-warning"><br>
-  <a href="{{pathFor route='showFriends'}}">REQUEST A MEAL BUDDY!</a><br>
-  </div>
-  <center style="font-family:‘Arial Black’, Gadget, sans-serif; color:#002966; font-size: 50px;">Places to dine on campus:</center>
-  <br><br>
+  <center style="font-family:‘Arial Black’, Gadget, sans-serif; color:#002966; font-size: 30px;">Places to dine on campus:</center>
+  <center style="font-family:‘Arial Black’, Gadget, sans-serif;  color:#00b8e6; font-size: 20px;">Click on a dining hall to learn more about it</center>
 
   <center>
   		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style = "width:800px; height: 400px">
@@ -29,37 +30,45 @@
   		  <div class="carousel-inner" role="listbox">
   		    <div class="item active">
   		    	<center>
-  		      <img src="https://s3.amazonaws.com/media.jst/4873_usdan_construction_082314_mb_0027f.JPG" width = "800">
+              <a href="https://brandeis.sodexomyway.com/dining-choices/usdan/lower-usdan.html">
+                <img src="https://s3.amazonaws.com/media.jst/4873_usdan_construction_082314_mb_0027f.JPG" width = "800">
+              </a>
   		      </center>
   		      <div class="carousel-caption">
-  		        <a href="https://brandeis.sodexomyway.com/dining-choices/usdan/lower-usdan.html">Usdan Dining Hall</a>
+  		        <center style="font-family:‘Arial Black’, Gadget, sans-serif; color:#00b8e6; font-size:40px;">Usdan Dining Hall</center>
   		      </div>
   		    </div>
   			    <div class="item">
   			    	<center>
-  			     	<img src="http://boston.forward.com/image/2/630/0/5//assets/images/articles/NY-Deli-at-Brandeis.jpg" width = "800" alt="...">
+                <a href="https://brandeis.sodexomyway.com/dining-choices/usdan/index.html">
+                  <img src="http://boston.forward.com/image/2/630/0/5//assets/images/articles/NY-Deli-at-Brandeis.jpg" width = "800">
+                </a>
   			     	</center>
   			    	<div class="carousel-caption">
-  			        	<a href="https://brandeis.sodexomyway.com/dining-choices/usdan/index.html">Upper Usdan</a>
+  			        	<center style="font-family:‘Arial Black’, Gadget, sans-serif; color:#00b8e6; font-size:40px;">Upper Usdan</center>
   			    	</div>
   		   		</div>
             <div class="item">
   			    	<center>
-  			     	<img src="http://brandeishoot.com/wp-content/uploads/2015/09/IMG_7145.jpg" width = "800" alt="...">
+                <a href="https://brandeis.sodexomyway.com/dining-choices/index.html">
+                  <img src="http://brandeishoot.com/wp-content/uploads/2015/09/IMG_7145.jpg" width = "800">
+                </a>
   			     	</center>
   			    	<div class="carousel-caption">
-  			        	<a href="https://brandeis.sodexomyway.com/dining-choices/index.html">Sherman Dining Hall</a>
+                <center style="font-family:‘Arial Black’, Gadget, sans-serif; color:#00b8e6; font-size:40px;">Sherman Dining Hall</center>
   			    	</div>
   		   		</div>
   		    <div class="item">
   		    	<center>
-  		      <img src="https://www.brandeis.edu/ces/externalevents/images/resize%20FC%20Lounge.JPG" width = "800" alt="...">
+              <a href="https://brandeis.sodexomyway.com/dining-choices/faculty-club.html">
+                <img src="https://www.brandeis.edu/ces/externalevents/images/resize%20FC%20Lounge.JPG" width = "800">
+              </a>
   		  		</center>
   		      <div class="carousel-caption">
-  		        <a href="https://brandeis.sodexomyway.com/dining-choices/faculty-club.html">Faculty Club</a>
+  		        <center style="font-family:‘Arial Black’, Gadget, sans-serif; color:#00b8e6; font-size:40px;">Faculty Club</center>
   		      </div>
   		    </div>
-  		    ...
+
   		  </div>
 
   		  <!-- Controls -->

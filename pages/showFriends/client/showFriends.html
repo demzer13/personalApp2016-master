@@ -7,7 +7,8 @@
   <center>
   <div class="bg-warning">
   <h1 style="font-family: Gill Sans / Gill Sans MT, sans-serif; color:#002966; font-size: 30px;">Request a Meal Buddy:</h1>
-  Your Name: <input type="text" class="js-name" placeholder="Name"><br>
+  Your Name: <input type="text" class="js-name" placeholder="Name"><br><br>
+  Phone number to reach you at: <input type="text" class="js-contact" placeholder="Phone Number"><br><br>
   Preferred Dining Time:
   <select class="js-time">
     <option>Please select a time</option>
@@ -22,7 +23,7 @@
     <option>6:00 P.M.</option>
     <option>6:30 P.M.</option>
   </select>
-  <br>
+  <br><br>
 
   Preferred Dining Place:
   <select class="js-place">
@@ -52,7 +53,15 @@
 </template>
 
 <template name="showFriend">
+  <div class="bg-info">
   <body style="background-color:#7FB3D5">
-  Be the nice friend that can accompany {{name}} at {{time}} in {{place}}!
+    {{#if phone}}
+      Be the nice friend that can accompany <b>{{name}}</b> at <b>{{time}}</b> in <b>{{place}}</b>!<br>
+      Contact them at this phone number: <b>{{phone}}</b>!!
+    {{else}}
+       Be the nice friend that can accompany <b>{{name}}</b> at <b>{{time}}</b> in <b>{{place}}</b>!<br>
+       This person did not provide their phone number.
+    {{/if}}
  </body>
+ </div>
 </template>

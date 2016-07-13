@@ -9,7 +9,7 @@ Template.table.helpers({
 	people:function(t,p){
     check(t,String);
     check(p,String);
-		console.dir([t,p]);
+		//console.dir([t,p]);
 		return Friends.find({time:t,place:p});
 	},
 	friends:function(){
